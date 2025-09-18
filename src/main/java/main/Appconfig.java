@@ -12,4 +12,12 @@ public class Appconfig {
         p.setName ("KoKo");
         return p;
     }
+    @Bean
+    String Hello(){
+        return "Hello";
+    }
+    @Bean
+    Integer ten(){
+        return 10;
+    }
 }
