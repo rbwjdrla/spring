@@ -34,5 +34,10 @@ public class ProjectConfig {
     Integer integer() {
         return 42;
     }
+    
+    @Bean
+    public java.util.function.Supplier<Parrot> parrotSupplier(Parrot parrot) {
+        return () -> parrot;
+    }
 
 }

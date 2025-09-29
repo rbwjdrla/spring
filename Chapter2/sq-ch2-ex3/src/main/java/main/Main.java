@@ -20,5 +20,10 @@ public class Main {
 
         Integer n=context.getBean(Integer.class);
         System.out.println(n);
+
+        // Person 빈을 가져와서 Supplier가 제공하는 Parrot을 확인합니다.
+        var person = context.getBean(Person.class);
+        System.out.println("Person's name: " + person.getName());
+        System.out.println("Person's parrot: " + person.getParrot().getName());
     }
 }
